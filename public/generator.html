@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>recipe generator</title>
+</head>
+<body>
+  <header>
+    <h1>random recipe generator</h1>
+    <a href="./index.html">Home</a>
+  </header>
+
+  <div>
+    <label for="main-course">
+      <input type="checkbox" id="main-course" value="main course">main course
+    </label>
+    <label for="side dish">
+      <input type="checkbox" id="side dish" value="side dish">side dish
+    </label>
+    <label for="dessert">
+      <input type="checkbox" id="dessert" value="dessert">dessert
+    </label> 
+    <label for="soup">
+      <input type="checkbox" id="soup" value="soup">soup
+    </label>
+    <label for="drink">
+      <input type="checkbox" id="drink" value="drink">drink
+    </label>
+    <label for="breaky">
+      <input type="checkbox" id="breakfast" value="breakfast">breakfast
+    </label> <br>
+    <!-- <span id="message"></span> -->
+    <button id="generate-recipe">generate new recipe</button> <button id="add-recipe">add to my recipe</button>
+    
+    <div id="random-recipe"></div>
+    
+    
+  </div>
+
+  <script src="scripts/generator-bundle.js"></script>
+</body>
+</html>

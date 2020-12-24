@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>edit recipe</title>
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <h1 class="header__title">recipe</h1>
+      <h2 class="header__subtitle"></h2>
+    </div>
+  </header>
+
+  <div class="actions">
+    <div class="actions__container actions__container--spaced">
+      <a href="/index.html">Home</a>
+      <span id="last-edited"></span>
+    </div>
+  </div>
+
+  <div class="container">
+    <input type="text" id="recipe-title" class="title-input" placeholder="recipe title">
+    <textarea id="recipe-steps" class="steps-input" placeholder="enter recipe text" cols="30" rows="10"></textarea>
+    <button id="remove-recipe" class="button button--secondary">Remove</button>
+  </div>
+
+  <form action="" id="new-ingredient">
+    <label for="ingredient-title">add ingredient here</label><br>
+    <input type="text" name="ingredient" id="ingredient-title" class="ingredient-input" placeholder="ingredient to add">
+    <button class="button">add</button>
+  </form>
+  
+  <div id="ingredients"></div>
+ 
+  <script src="scripts/edit-bundle.js"></script>
+</body>
+</html>
